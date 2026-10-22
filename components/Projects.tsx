@@ -183,7 +183,7 @@ function ProjectModal({
         >
           <CloseIcon className="size-4" />
         </button>
-        <p className={`${mono.className} text-[11px] uppercase tracking-[0.1em] text-neutral-500`}>
+        <p className={`${mono.className} text-[11px] uppercase tracking-[0.1em] text-white/80`}>
           {project.period} &middot; {project.org}
         </p>
         <h3 className={`${display.className} mt-2 text-2xl font-medium leading-snug text-white`}>
@@ -272,24 +272,24 @@ export default function Projects() {
               onClick={() => setActive(project)}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-left backdrop-blur-sm transition-colors duration-300 [-webkit-tap-highlight-color:transparent] hover:border-[#d4af37]/40 hover:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]"
             >
-              <p className={`${mono.className} text-[11px] uppercase tracking-[0.1em] text-neutral-500`}>
+              <p className={`${mono.className} text-[11px] uppercase tracking-[0.1em] text-white/80`}>
                 {project.period}
               </p>
               <h3 className="mt-2 text-[16px] font-medium leading-snug text-white">
                 {project.name}
               </h3>
-              <p className="mt-1 text-[13px] text-neutral-400">{project.org}</p>
+              <p className="mt-1 text-[13px] text-white">{project.org}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {project.stack.slice(0, 3).map((tool) => (
                   <span
                     key={tool}
-                    className={`${mono.className} rounded-full border border-white/10 px-2 py-0.5 text-[10px] font-medium text-neutral-400`}
+                    className={`${mono.className} rounded-full border border-white/10 px-2 py-0.5 text-[10px] font-medium text-white`}
                   >
                     {tool}
                   </span>
                 ))}
               </div>
-              <div className="relative mt-4 flex items-center gap-1 text-[12px] font-medium text-neutral-500 transition group-hover:text-white">
+              <div className="relative mt-4 flex items-center gap-1 text-[12px] font-medium text-white transition group-hover:text-white">
                 View details
                 <ArrowIcon className="size-3.5" />
               </div>
