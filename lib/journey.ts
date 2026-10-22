@@ -3,6 +3,8 @@ export type JourneyProject = {
   name: string;
   stack: string[];
   link: string;
+  why: string;
+  features: string[];
 };
 export type JourneyChapter = {
   period: string;
@@ -41,103 +43,147 @@ export const chapters: JourneyChapter[] = [
     summary:
       "Finished my degree, learned WordPress and digital marketing basics, and shipped my first client website.",
     result: "First client delivered",
-    projects: [
-      {
-        name: "fakhruddinaliahmad.com \u2014 advocate website",
-        stack: ["WordPress", "Digital Marketing"],
-        link: "#",
-      },
-    ],
+    projects: [],
   },
   {
-    period: "2022 \u2013 2023",
+    period: "Mar 2022 \u2013 Oct 2023",
     era: "Spreadsheets",
     accent: "emerald",
     role: "Admissions Coordinator",
     org: "Khadimul Islam",
     summary:
-      "Ran day-to-day admissions \u2014 counselling calls, enrollment tracking and weekly reports for management.",
-    projects: [
-      {
-        name: "Admissions tracking & weekly reporting",
-        stack: ["Excel", "PowerPoint"],
-        link: "#",
-      },
-    ],
+      "Owned full-lifecycle admissions operations for the institute \u2014 high-volume advisory calls, candidate tracking pipelines and consultative counselling that guided families through enrollment requirements and onboarding. Streamlined student records and admissions pipelines in Excel, with weekly progress reporting to senior management.",
+    projects: [],
   },
   {
-    period: "2023 \u2013 2025",
+    period: "Oct 2023 \u2013 Sep 2025",
     era: "Automation",
     accent: "lime",
-    role: "Business Development Executive",
+    role: "Business Development Executive \u2014 Outreach & Collaboration",
     org: "Self Prep IAS",
     summary:
-      "Restructured the admissions funnel and replaced scattered sheets with an automated lead-tracking system.",
-    result: "+18% admissions revenue",
+      "Restructured the admissions sales funnel and expanded institutional channels, converting 100+ high-intent leads through consultative counselling sessions at a consistent 70% closing rate. Formed coaching-centre alliances that grew market reach by 30%, and automated spreadsheet-based reporting to cut turnaround time by 70%.",
+    result: "+18% admissions revenue \u00b7 70% close rate",
     projects: [
       {
-        name: "Admission Planner CRM \u2014 v1",
-        stack: ["Google Sheets", "Apps Script"],
-        link: "#",
+        name: "Admission Planner CRM \u2014 Staff Portal",
+        stack: ["Google Apps Script", "Google Sheets"],
+        link: "https://script.google.com/macros/s/AKfycbyJZKyHjifov1u2ykN2PUHrSuMJ4aBO3dnjLG6nb6x24drtV4M8Tg_u2xlz4YVsztg/exec",
+        why: "Self Prep IAS tracked every admission lead by hand across scattered registers and calls. I built a lightweight CRM counsellors could log into daily to see assigned leads, call outcomes, and follow-up dates \u2014 no training overhead.",
+        features: [
+          "Lead assignment per counsellor",
+          "Call outcome logging",
+          "Automated follow-up reminders",
+          "Individual staff login",
+        ],
+      },
+      {
+        name: "Admission Planner CRM \u2014 Admin Portal",
+        stack: ["Google Apps Script", "Google Sheets"],
+        link: "https://script.google.com/macros/s/AKfycbyJZKyHjifov1u2ykN2PUHrSuMJ4aBO3dnjLG6nb6x24drtV4M8Tg_u2xlz4YVsztg/exec?admin=1",
+        why: "Management had to ask each counsellor individually for updates. I split out an admin layer with one team-wide view of lead status and conversion performance.",
+        features: [
+          "Team-wide lead dashboard",
+          "Conversion funnel view",
+          "Daily activity summary",
+          "Admin-only access",
+        ],
       },
     ],
   },
   {
-    period: "2025 \u2013 2026",
-    era: "Developer stack",
+    period: "Oct 2025 \u2013 Mar 2026",
+    era: "Outreach & partnerships",
     accent: "blue",
-    role: "Senior Associate, Outreach & Partnerships",
+    role: "Senior Associate \u2014 Outreach & Partnership Marketing",
     org: "Hi-Tech Institute of Engineering & Technology",
     summary:
-      "Built a school and college partnership pipeline from zero, and moved my builds onto a real developer stack.",
+      "Built an institutional outreach pipeline from zero \u2014 school and college partnerships across Delhi NCR \u2014 and ran IISDT-method career workshops for 500+ prospective students to resolve hesitation barriers and accelerate admissions decisions. Automated Google Apps Script dashboards gave leadership real-time visibility into regional lead conversion velocity and outreach ROI.",
     result: "40+ partnerships \u00b7 80% close rate",
     projects: [
       {
         name: "knowurself.in \u2014 career assessment platform",
         stack: ["VS Code", "GitHub", "Vercel"],
-        link: "#",
+        link: "https://knowurself.in/",
+        why: "Students were picking streams and courses based on peer pressure and guesswork. I built an AI-powered assessment to give them a structured answer \u2014 and turned that clarity into a qualified lead source for partner institutes.",
+        features: [
+          "AI-powered career assessment",
+          "Student + institute dashboards",
+          "Lead capture for partner schools/colleges",
+          "Hosted on Vercel with a Neon database",
+        ],
       },
       {
         name: "Admission Planner \u2014 rebuilt as a web app",
         stack: ["VS Code", "GitHub", "Vercel"],
         link: "#",
+        why: "The original Apps Script CRM worked but got slow as lead volume grew. I rebuilt it as a proper web app so counsellors had a faster, more reliable tool.",
+        features: [
+          "Faster lead search & filtering",
+          "Role-based staff/admin access",
+          "Built on a real developer stack",
+          "Replaces the spreadsheet-based original",
+        ],
       },
     ],
   },
   {
-    period: "Mar 2026 \u2013 Present",
+    period: "Apr 2026 \u2013 Present",
     era: "Growth engine",
     accent: "violet",
     role: "Growth Marketing Specialist",
     org: "Bismil International Academy",
     summary:
-      "Own the school's admissions growth engine \u2014 from the systems staff use daily to the tracking behind every campaign.",
-    result: "+20% admissions \u00b7 600+ students",
+      "Run full-funnel Meta Ads (Facebook & Instagram lead generation) end to end, applying student decision psychology to ad copy, landing pages and lead follow-up to maximize inquiry-to-campus-visit conversion. Engineered a centralized admissions CRM from scratch in Google Apps Script, replacing 12 disparate spreadsheets and cutting manual tasks by 65%. Instrumented GA4, Microsoft Clarity and Meta Pixel/CAPI tracking across high-speed landing pages built on VS Code, GitHub and Cloudflare.",
+    result: "+20% admissions \u00b7 600+ students \u00b7 14\u21926 day lead cycle",
     projects: [
       {
         name: "School Management System \u2014 v1",
         stack: ["Google Apps Script"],
-        link: "#",
+        link: "https://script.google.com/macros/s/AKfycbzLrGxDsEmKzbki2k-OYplF_OruuOqNVRZFRpVmfHxUgyU4nK3ZF_8zjHDlKGtcKBxyXg/exec",
+        why: "Bismil International Academy ran fee tracking and admin work across 12 different spreadsheets. I built this to pull all of that into one tool staff could actually use without retraining.",
+        features: [
+          "Single source of truth for staff records",
+          "Fee tracking",
+          "Built fast on Google Apps Script",
+          "No new software for staff to learn",
+        ],
       },
       {
         name: "School Management System \u2014 rebuilt",
         stack: ["VS Code", "GitHub", "Cloudflare", "Neon"],
         link: "#",
-      },
-      {
-        name: "Meta Developer app \u2014 Facebook Login",
-        stack: ["Meta for Developers", "OAuth"],
-        link: "#",
+        why: "Once the Apps Script version proved the workflow, I rebuilt it as a real website with a proper database \u2014 scaling past what spreadsheets could handle and doubling as the school's public site.",
+        features: [
+          "Public website + internal admin tools",
+          "Neon Postgres database",
+          "Deployed on Cloudflare",
+          "Built with VS Code & GitHub",
+        ],
       },
       {
         name: "Website analytics & behaviour tracking",
         stack: ["GA4", "Microsoft Clarity"],
-        link: "#",
+        link: "https://bismilinternationalacademy.com",
+        why: "I needed to see exactly where visitors dropped off on admission pages instead of guessing, so I wired up analytics and session recordings to diagnose the funnel.",
+        features: [
+          "GA4 event tracking",
+          "Microsoft Clarity session recordings",
+          "Funnel drop-off analysis",
+          "Feeds directly into ad optimization",
+        ],
       },
       {
         name: "Meta Ads performance sheet \u2014 CPL, CPA, ROAS, CAC",
         stack: ["Google Sheets", "Meta Ads Manager"],
         link: "#",
+        why: "Ad spend was going out without a clear read on what it was returning. I built a live tracking sheet pulling Meta Ads data to see cost-per-lead and return on spend at a glance.",
+        features: [
+          "Live CPL / CPA / ROAS / CAC tracking",
+          "Pulled from Meta Ads Manager data",
+          "Guides budget reallocation",
+          "Built in Google Sheets",
+        ],
       },
     ],
   },
@@ -150,7 +196,6 @@ export const growthByYear = [
   { year: "2025", value: 9 },
   { year: "2026", value: 10 },
 ];
-
 export type SkillGroup = {
   title: string;
   items: string[];
