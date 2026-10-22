@@ -1,8 +1,21 @@
-﻿import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import Image from "next/image";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { chapters, accentColors } from "@/lib/journey";
 const display = Space_Grotesk({ subsets: ["latin"] });
 const mono = JetBrains_Mono({ subsets: ["latin"] });
-const experience = [...chapters].reverse();
+const experience = [...chapters].reverse().filter((item: any) => !JSON.stringify(item).toLowerCase().includes("graduation"));
+const photoImages: { match: string; src: string; fit: "contain" | "cover" }[] = [
+  { match: "bismil", src: "/images/experience/bismil-logo.png", fit: "contain" },
+  { match: "hi-tech", src: "/images/experience/hitech-photo.jpg", fit: "cover" },
+  { match: "hitech", src: "/images/experience/hitech-photo.jpg", fit: "cover" },
+  { match: "self prep", src: "/images/experience/selfprep-logo.png", fit: "contain" },
+  { match: "khadimul", src: "/images/experience/khadimul-islam-gate.jpg", fit: "cover" },
+];
+function findPhoto(org: string) {
+  const lower = org.toLowerCase();
+  const found = photoImages.find((l) => lower.includes(l.match));
+  return found?.src;
+}
 function initials(name: string) {
   return name
     .split(" ")
@@ -25,6 +38,9 @@ export default function Experience() {
         {experience.map((item, index) => {
           const color = accentColors[item.accent];
           const flip = index % 2 === 1;
+          const photoMatch = photoImages.find((p) => item.org.toLowerCase().includes(p.match));
+              const photoSrc = photoMatch?.src;
+              const photoFit = photoMatch?.fit ?? "contain";
           return (
             <div
               key={item.role}
@@ -32,39 +48,29 @@ export default function Experience() {
                 flip ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >
-              {/* Photo + logo badge placeholder.
-                  Swap the gradient div below for:
-                  <Image src="/images/exp-<n>-photo.jpg" alt={item.org} fill className="object-cover" />
-                  and the small circle for:
-                  <Image src="/images/exp-<n>-logo.png" alt={item.org} fill className="object-contain p-1.5" /> */}
               <div className="relative md:col-span-2">
                 <div
                   className="relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-2xl"
                   style={{
-                    background: `linear-gradient(135deg, ${color}33, ${color}0d)`,
+                    background: photoSrc ? "#fff" : `linear-gradient(135deg, ${color}33, ${color}0d)`,
                     border: `1px solid ${color}40`,
                   }}
                 >
-                  <span
-                    className={`${display.className} text-4xl font-semibold opacity-40`}
-                    style={{ color }}
-                  >
-                    {initials(item.org)}
-                  </span>
-                  <span className="absolute bottom-2 right-2 text-[10px] text-neutral-400/70">
-                    photo
-                  </span>
-                </div>
-                <div
-                  className="absolute -bottom-4 -right-4 flex size-14 items-center justify-center rounded-xl border-2 border-white bg-white shadow-md"
-                  title={`${item.org} logo`}
-                >
-                  <span
-                    className={`${mono.className} text-[11px] font-bold`}
-                    style={{ color }}
-                  >
-                    {initials(item.org).slice(0, 2)}
-                  </span>
+                  {photoSrc ? (
+                    <Image src={photoSrc} alt={item.org} fill className={photoFit === "cover" ? "object-cover" : "object-contain p-8"} />
+                  ) : (
+                    <>
+                      <span
+                        className={`${display.className} text-4xl font-semibold opacity-40`}
+                        style={{ color }}
+                      >
+                        {initials(item.org)}
+                      </span>
+                      <span className="absolute bottom-2 right-2 text-[10px] text-neutral-400/70">
+                        photo
+                      </span>
+                    </>
+                  )}
                 </div>
               </div>
               <div className="md:col-span-3">

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
@@ -126,5 +126,9 @@
   }
   html {
     @apply font-sans;
+  }
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }
