@@ -69,7 +69,7 @@ function FloatingIcon({
       animate={{
         y: [0, -14, 0],
         x: [0, driftX * direction, 0],
-        opacity: [0.18, 0.5, 0.18],
+        opacity: [0.35, 0.8, 0.35],
       }}
       transition={{ duration: dur, repeat: Infinity, ease: "easeInOut", delay }}
     >
@@ -270,7 +270,7 @@ export default function Projects() {
             <button
               key={project.name}
               onClick={() => setActive(project)}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-left backdrop-blur-sm transition-colors duration-300 hover:border-[#d4af37]/40 hover:bg-white/[0.07]"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-left backdrop-blur-sm transition-colors duration-300 [-webkit-tap-highlight-color:transparent] hover:border-[#d4af37]/40 hover:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]"
             >
               <p className={`${mono.className} text-[11px] uppercase tracking-[0.1em] text-neutral-500`}>
                 {project.period}

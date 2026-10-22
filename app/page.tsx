@@ -1,5 +1,4 @@
-﻿import Hero from "@/components/Hero";
-import AdSpendSection from "@/components/AdSpendSection";
+﻿import AdSpendSection from "@/components/AdSpendSection";
 import Intro from "@/components/Intro";
 import Journey from "@/components/Journey";
 import MissionVision from "@/components/MissionVision";
@@ -15,7 +14,6 @@ export default function Home() {
       <div className="relative mx-auto max-w-5xl px-5 sm:px-8 lg:px-12">
         <Intro />
         <Skills />
-        <Hero />
         <AdSpendSection />
         <Journey />
         <MissionVision />
