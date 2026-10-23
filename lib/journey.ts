@@ -138,30 +138,6 @@ export const chapters: JourneyChapter[] = [
     result: "+20% admissions \u00b7 600+ students \u00b7 14\u21926 day lead cycle",
     projects: [
       {
-        name: "School Management System \u2014 v1",
-        stack: ["Google Apps Script"],
-        link: "https://script.google.com/macros/s/AKfycbzLrGxDsEmKzbki2k-OYplF_OruuOqNVRZFRpVmfHxUgyU4nK3ZF_8zjHDlKGtcKBxyXg/exec",
-        why: "Bismil International Academy ran fee tracking and admin work across 12 different spreadsheets. I built this to pull all of that into one tool staff could actually use without retraining.",
-        features: [
-          "Single source of truth for staff records",
-          "Fee tracking",
-          "Built fast on Google Apps Script",
-          "No new software for staff to learn",
-        ],
-      },
-      {
-        name: "School Management System \u2014 rebuilt",
-        stack: ["VS Code", "GitHub", "Cloudflare", "Neon"],
-        link: "#",
-        why: "Once the Apps Script version proved the workflow, I rebuilt it as a real website with a proper database \u2014 scaling past what spreadsheets could handle and doubling as the school's public site.",
-        features: [
-          "Public website + internal admin tools",
-          "Neon Postgres database",
-          "Deployed on Cloudflare",
-          "Built with VS Code & GitHub",
-        ],
-      },
-      {
         name: "Website analytics & behaviour tracking",
         stack: ["GA4", "Microsoft Clarity"],
         link: "https://bismilinternationalacademy.com",

@@ -65,7 +65,7 @@ function Field({
         onBlur={() => {
           if (value === "") onChange("0");
         }}
-        className={`${mono.className} mt-1 w-full rounded-lg border border-white/10 bg-black/30 px-3 py-2 text-[14px] text-white outline-none transition focus:border-emerald-400/60`}
+        className={`${mono.className} mt-1 w-full rounded-lg border border-white/10 bg-white px-3 py-2 text-[14px] text-neutral-900 outline-none transition focus:border-emerald-400/60`}
       />
     </label>
   );
