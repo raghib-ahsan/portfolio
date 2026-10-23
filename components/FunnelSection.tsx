@@ -4,7 +4,7 @@ import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 const display = Space_Grotesk({ subsets: ["latin"] });
 const mono = JetBrains_Mono({ subsets: ["latin"] });
 const stageMeta = [
-  { label: "Inquiries", color: "#38bdf8" },
+  { label: "Enquiries", color: "#38bdf8" },
   { label: "Counselling calls", color: "#818cf8" },
   { label: "Applications", color: "#fbbf24" },
   { label: "Enrolled", color: "#34d399" },
@@ -83,14 +83,14 @@ export default function FunnelSection() {
                 {values[3].toLocaleString("en-IN")} enrolled
               </p>
               <p className="mt-0.5 text-[11px] text-indigo-200/60">
-                {overallRate.toFixed(1)}% overall inquiry-to-enrollment rate
+                {overallRate.toFixed(1)}% overall enquiry-to-enrollment rate
               </p>
             </div>
           </div>
           {/* controls */}
           <div className="space-y-5">
-            <Slider label="Inquiries this month" value={inquiries} min={50} max={2000} step={10} onChange={setInquiries} />
-            <Slider label="Inquiry to call rate" value={callRate} min={0} max={100} step={1} suffix="%" onChange={setCallRate} />
+            <Slider label="Enquiries this month" value={inquiries} min={50} max={2000} step={10} onChange={setInquiries} />
+            <Slider label="Enquiry to call rate" value={callRate} min={0} max={100} step={1} suffix="%" onChange={setCallRate} />
             <Slider label="Call to application rate" value={appRate} min={0} max={100} step={1} suffix="%" onChange={setAppRate} />
             <Slider label="Application to enrollment rate" value={enrollRate} min={0} max={100} step={1} suffix="%" onChange={setEnrollRate} />
           </div>

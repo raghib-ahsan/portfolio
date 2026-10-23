@@ -34,7 +34,7 @@ const pillars = [
     label: "Mission",
     Icon: TargetIcon,
     pos: { left: "50%", top: "6%" },
-    text: "Replace guesswork in school and institute admissions with systems that work \u2014 automated lead tracking, full-funnel Meta Ads, and counselling-backed follow-up that turn inquiries into enrolled students.",
+    text: "Replace guesswork in educational institution admissions with systems that work \u2014 automated lead tracking, CRM pipelines, and Meta Ads performance dashboards that turn enquiries into enrolled students.",
   },
   {
     key: "vision",
@@ -48,7 +48,7 @@ const pillars = [
     label: "Goal",
     Icon: FlagIcon,
     pos: { left: "92%", top: "90%" },
-    text: "Keep compounding results \u2014 deeper institutional partnerships, faster lead cycles, and admissions growth that scales with every school I work with.",
+    text: "Keep compounding results \u2014 deeper institutional partnerships, faster lead cycles, and admissions growth that scales with every educational institution I work with.",
   },
 ];
 export default function MissionVision() {

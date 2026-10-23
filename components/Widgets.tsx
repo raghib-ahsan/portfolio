@@ -16,7 +16,7 @@ export default function Widgets() {
           Try it yourself
         </h2>
         <p className="mt-1 text-sm text-neutral-400">
-          Adjust inquiry volume and conversion rates at each stage to see
+          Adjust enquiry volume and conversion rates at each stage to see
           how many students actually enroll.
         </p>
         <div className="mt-10 mx-auto max-w-xl">

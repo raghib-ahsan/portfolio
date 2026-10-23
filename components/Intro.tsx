@@ -14,16 +14,15 @@ export default function Intro() {
         <h1
           className={`${serif.className} mt-4 bg-linear-to-r from-sky-600 via-violet-600 to-pink-600 bg-clip-text text-4xl font-medium leading-[1.1] text-transparent md:text-5xl`}
         >
-          Turning inquiries
+          Turning enquiries
           <br />
           into enrollments.
         </h1>
         <p className="mt-5 max-w-md text-[15px] leading-relaxed text-neutral-600">
-          Mahmood Raghib Ahsan, growth marketer with 4+ years scaling
-          admissions for schools and institutes through full-funnel Meta Ads,
-          institutional outreach, and student decision psychology: 20%
-          admissions growth, lead cycles cut from 14 to 6 days, and 40+
-          school and college partnerships closed at an 80% success rate.
+          Mahmood Raghib Ahsan, growth marketer with 3.5+ years scaling
+          educational admissions through marketing analytics, institutional
+          outreach, and CRM automation: 20% admissions growth and 40+
+          educational partnerships closed at an 80% success rate.
         </p>
       </div>
       <div className="relative mx-auto w-full max-w-sm">

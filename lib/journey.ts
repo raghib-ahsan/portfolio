@@ -113,18 +113,7 @@ export const chapters: JourneyChapter[] = [
           "Hosted on Vercel with a Neon database",
         ],
       },
-      {
-        name: "Admission Planner \u2014 rebuilt as a web app",
-        stack: ["VS Code", "GitHub", "Vercel"],
-        link: "#",
-        why: "The original Apps Script CRM worked but got slow as lead volume grew. I rebuilt it as a proper web app so counsellors had a faster, more reliable tool.",
-        features: [
-          "Faster lead search & filtering",
-          "Role-based staff/admin access",
-          "Built on a real developer stack",
-          "Replaces the spreadsheet-based original",
-        ],
-      },
+
     ],
   },
   {
@@ -134,8 +123,8 @@ export const chapters: JourneyChapter[] = [
     role: "Growth Marketing Specialist",
     org: "Bismil International Academy",
     summary:
-      "Run full-funnel Meta Ads (Facebook & Instagram lead generation) end to end, applying student decision psychology to ad copy, landing pages and lead follow-up to maximize inquiry-to-campus-visit conversion. Engineered a centralized admissions CRM from scratch in Google Apps Script, replacing 12 disparate spreadsheets and cutting manual tasks by 65%. Instrumented GA4, Microsoft Clarity and Meta Pixel/CAPI tracking across high-speed landing pages built on VS Code, GitHub and Cloudflare.",
-    result: "+20% admissions \u00b7 600+ students \u00b7 14\u21926 day lead cycle",
+      "Strengthen school and college outreach partnerships and optimize lead nurturing and follow-up, boosting enquiry-to-campus-visit conversion and overall enrollment engagement. Built a custom lead-tracking CRM in Google Apps Script and a Google Sheets performance dashboard pulling Meta Ads data via Meta Business Suite to track campaigns and the admissions funnel in real time. Instrumented GA4, Microsoft Clarity and Meta Pixel tracking across a faster site built on VS Code, GitHub and Cloudflare.",
+    result: "+20% admissions growth",
     projects: [
       {
         name: "Website analytics & behaviour tracking",
@@ -152,7 +141,7 @@ export const chapters: JourneyChapter[] = [
       {
         name: "Meta Ads performance sheet \u2014 CPL, CPA, ROAS, CAC",
         stack: ["Google Sheets", "Meta Ads Manager"],
-        link: "#",
+        link: "https://docs.google.com/spreadsheets/d/1d3MAmfRc5Gif53ydd6UbC8ndlOH7T5bw/edit?gid=352752640#gid=352752640",
         why: "Ad spend was going out without a clear read on what it was returning. I built a live tracking sheet pulling Meta Ads data to see cost-per-lead and return on spend at a glance.",
         features: [
           "Live CPL / CPA / ROAS / CAC tracking",
