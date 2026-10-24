@@ -19,10 +19,11 @@ export default function Intro() {
           into enrollments.
         </h1>
         <p className="mt-5 max-w-md text-[15px] leading-relaxed text-neutral-600">
-          Mahmood Raghib Ahsan, growth marketer with 3.5+ years scaling
-          educational admissions through marketing analytics, institutional
-          outreach, and CRM automation: 20% admissions growth and 40+
-          educational partnerships closed at an 80% success rate.
+          Mahmood Raghib Ahsan, results-driven growth marketer with 3.5+
+          years scaling educational admissions through marketing technology,
+          institutional partnerships, and CRM automation: multi-channel lead
+          generation, conversion rate optimization, 20% admissions growth,
+          and 40+ educational partnerships closed at an 80% success rate.
         </p>
       </div>
       <div className="relative mx-auto w-full max-w-sm">

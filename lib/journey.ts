@@ -52,7 +52,7 @@ export const chapters: JourneyChapter[] = [
     role: "Admissions Coordinator",
     org: "Khadimul Islam",
     summary:
-      "Owned full-lifecycle admissions operations for the institute \u2014 high-volume advisory calls, candidate tracking pipelines and consultative counselling that guided families through enrollment requirements and onboarding. Streamlined student records and admissions pipelines in Excel, with weekly progress reporting to senior management.",
+      "Oversaw full-lifecycle admissions operations \u2014 high-volume advisory calls and candidate tracking pipelines \u2014 and guided prospective families through enrollment requirements and onboarding. Digitized student records and admissions pipelines in Excel, with weekly progress reports to senior management.",
     projects: [],
   },
   {
@@ -123,7 +123,7 @@ export const chapters: JourneyChapter[] = [
     role: "Growth Marketing Specialist",
     org: "Bismil International Academy",
     summary:
-      "Strengthen school and college outreach partnerships and optimize lead nurturing and follow-up, boosting enquiry-to-campus-visit conversion and overall enrollment engagement. Built a custom lead-tracking CRM in Google Apps Script and a Google Sheets performance dashboard pulling Meta Ads data via Meta Business Suite to track campaigns and the admissions funnel in real time. Instrumented GA4, Microsoft Clarity and Meta Pixel tracking across a faster site built on VS Code, GitHub and Cloudflare.",
+      "Strengthen institutional partnerships across schools and colleges, improving enquiry-to-campus-visit conversion and overall enrollment engagement. Engineered a custom CRM in Google Apps Script and optimized site UX to streamline admissions workflows. Integrated Meta Developer APIs with Google Sheets to automate ad-campaign performance reporting and real-time lead visibility, contributing to 20% admissions growth. Instrumented GA4, Microsoft Clarity and Meta Pixel tracking, with site infrastructure on VS Code, GitHub and Cloudflare to reduce bounce rate.",
     result: "+20% admissions growth",
     projects: [
       {
